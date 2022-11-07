@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/literate-happiness/static/css/main.d369a078.chunk.css",
+    "main.js": "/literate-happiness/static/js/main.367698f2.chunk.js",
+    "main.js.map": "/literate-happiness/static/js/main.367698f2.chunk.js.map",
+    "runtime-main.js": "/literate-happiness/static/js/runtime-main.4bc12a00.js",
+    "runtime-main.js.map": "/literate-happiness/static/js/runtime-main.4bc12a00.js.map",
+    "static/js/2.ce0d3ed1.chunk.js": "/literate-happiness/static/js/2.ce0d3ed1.chunk.js",
+    "static/js/2.ce0d3ed1.chunk.js.map": "/literate-happiness/static/js/2.ce0d3ed1.chunk.js.map",
+    "index.html": "/literate-happiness/index.html",
+    "static/css/main.d369a078.chunk.css.map": "/literate-happiness/static/css/main.d369a078.chunk.css.map",
+    "static/js/2.ce0d3ed1.chunk.js.LICENSE.txt": "/literate-happiness/static/js/2.ce0d3ed1.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4bc12a00.js",
+    "static/js/2.ce0d3ed1.chunk.js",
+    "static/css/main.d369a078.chunk.css",
+    "static/js/main.367698f2.chunk.js"
+  ]
+}
