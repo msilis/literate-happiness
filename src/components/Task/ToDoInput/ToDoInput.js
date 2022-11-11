@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 
 import Button from "../../UI/Button/Button";
 import styles from "./ToDoInput.module.css";
@@ -6,6 +6,7 @@ import styles from "./ToDoInput.module.css";
 const ToDoInput = (props) => {
   const [enteredValue, setEnteredValue] = useState("");
   const [isValid, setIsValid] = useState(true);
+  const inputRef = useRef(null);
 
   const toDoInputChangeHandler = (event) => {
     console.log(event);
@@ -22,7 +23,9 @@ const ToDoInput = (props) => {
       return;
     }
     props.onAddToDo(enteredValue);
+    
     setEnteredValue('');
+    inputRef.current.focus();
     event.target.reset();
   };
 
@@ -32,7 +35,7 @@ const ToDoInput = (props) => {
         className={`${styles["form-control"]} ${!isValid && styles.invalid}`}
       >
         <label>Things to do</label>
-        <input type="text" onChange={toDoInputChangeHandler} />
+        <input ref={inputRef} type="text" onChange={toDoInputChangeHandler} />
       </div>
       <Button type="submit">Add Item</Button>
     </form>
